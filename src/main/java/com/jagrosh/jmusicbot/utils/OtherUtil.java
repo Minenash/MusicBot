@@ -169,10 +169,11 @@ public class OtherUtil
     
     public static String getCurrentVersion()
     {
+
         if(JMusicBot.class.getPackage()!=null && JMusicBot.class.getPackage().getImplementationVersion()!=null)
             return JMusicBot.class.getPackage().getImplementationVersion();
         else
-            return "UNKNOWN";
+            return getLatestVersion();
     }
     
     public static String getLatestVersion()
