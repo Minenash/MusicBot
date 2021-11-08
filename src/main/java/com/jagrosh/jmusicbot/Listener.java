@@ -74,7 +74,7 @@ public class Listener extends ListenerAdapter
                 try
                 {
                     User owner = bot.getJDA().retrieveUserById(bot.getConfig().getOwnerId()).complete();
-                    String currentVersion = OtherUtil.getCurrentVersion();
+                    String currentVersion = OtherUtil.getLatestVersion();
                     String latestVersion = OtherUtil.getLatestVersion();
                     if(latestVersion!=null && !currentVersion.equalsIgnoreCase(latestVersion))
                     {

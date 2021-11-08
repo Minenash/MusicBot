@@ -173,7 +173,7 @@ public class OtherUtil
         if(JMusicBot.class.getPackage()!=null && JMusicBot.class.getPackage().getImplementationVersion()!=null)
             return JMusicBot.class.getPackage().getImplementationVersion();
         else
-            return getLatestVersion();
+            return "UNKNOWN";
     }
     
     public static String getLatestVersion()
